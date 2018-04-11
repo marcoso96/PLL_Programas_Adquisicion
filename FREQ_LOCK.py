@@ -56,7 +56,7 @@ for i in range(6000,14000,200):
 	
 	print ("Escribo SOUR2:FREQ "+str(i))
 	gen.write("SOUR2:FREQ "+str(i))
-	print ("Preg Freq")
+	print ("Pregunto Frecuencia")
 	average[i]=osc.query("MEAS:FREQ? CHAN1")
 	print ("Joya osc")
 	output.write("%f\t%f\n" % (phase[i], average[i]))
